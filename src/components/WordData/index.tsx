@@ -22,7 +22,7 @@ export const WordData: React.FC = () => {
     if (word !== undefined) {
       search({word}).then(() => setIsLoading(false));
     }
-  }, [word]);
+  }, [search, word]);
 
   const synonyms = React.useMemo(
     () => wordData ? wordData.meanings.map((meaning) => meaning.synonyms).flat() : [],
