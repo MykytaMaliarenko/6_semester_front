@@ -7,7 +7,7 @@ export const Search: React.FC = () => {
   const navigate = useNavigate();
 
   const doSearch = () => {
-    navigate(`/${searchRequest}`);
+    navigate(`/6_semester_front/${searchRequest}`);
     setSearchRequest('');
   }
 

@@ -17,8 +17,8 @@ root.render(
     <StoreProviderCasted store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/:word" element={<WordData />} />
+          <Route path="/6_semester_front" element={<Home />} />
+          <Route path="/6_semester_front/:word" element={<WordData />} />
         </Routes>
       </BrowserRouter>
     </StoreProviderCasted>
